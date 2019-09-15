@@ -1,0 +1,27 @@
+{
+  "name": "email-validator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon src/index.js",
+    "build": "NODE_ENV=production node src/index.js"
+  },
+  "dependencies": {
+    "express": "4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "1.19.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EliFuzz/email-validator.git"
+  },
+  "keywords": [],
+  "author": "RA",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EliFuzz/email-validator/issues"
+  },
+  "homepage": "https://github.com/EliFuzz/email-validator#readme"
+}
