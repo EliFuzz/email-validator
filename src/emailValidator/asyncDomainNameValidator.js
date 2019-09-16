@@ -1,10 +1,10 @@
 const dns = require("dns");
 
-const domainNameValidator = ({ domain }) =>
+const asyncDomainNameValidator = ({ domain }) =>
   new Promise((resolve, _) =>
     dns.resolveMx(domain, function(error, mx) {
       resolve(error || typeof mx === "undefined");
     })
   );
 
-module.exports = domainNameValidator;
+module.exports = asyncDomainNameValidator;

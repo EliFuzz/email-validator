@@ -4,7 +4,7 @@ ___
 Available validations:
 1. [checks for `NULL`](https://github.com/EliFuzz/email-validator/blob/master/src/emailValidator/emptyInput.js)
 2. [RFC Validation](https://github.com/EliFuzz/email-validator/blob/master/src/emailValidator/rfcEmailValidator.js)
-3. [DNS check](https://github.com/EliFuzz/email-validator/blob/master/src/emailValidator/domainNameValidator.js)
+3. [DNS check](https://github.com/EliFuzz/email-validator/blob/master/src/emailValidator/asyncDomainNameValidator.js)
 
 ### Init
 ```console

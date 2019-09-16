@@ -1,6 +1,6 @@
 const emptyInput = require("./emptyInput");
 const rfcEmailValidator = require("./rfcEmailValidator");
-const domainNameValidator = require("./domainNameValidator");
+const asyncDomainNameValidator = require("./asyncDomainNameValidator");
 const responseEmail = require("./responseEmail");
 
 const validate = async ({ email }) => {
@@ -8,7 +8,7 @@ const validate = async ({ email }) => {
     return responseEmail({ validInput: false, validDomain: false });
   }
 
-  if (await domainNameValidator({ domain: email.split("@")[1] })) {
+  if (await asyncDomainNameValidator({ domain: email.split("@")[1] })) {
     return responseEmail({ validInput: true, validDomain: false });
   }
 
